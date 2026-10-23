@@ -161,7 +161,6 @@ extension Effect {
 ///   - operation: An async operation.
 /// - Throws: An error thrown by the operation.
 /// - Returns: A value produced by operation.
-@_unsafeInheritExecutor
 public func withTaskCancellation<ID: Hashable, T: Sendable>(
   id: ID,
   cancelInFlight: Bool = false,
